@@ -20,3 +20,13 @@ clearButton.addEventListener('click', () => {
 });
     
 makeRows(16, 16);
+
+const applyButton = document.getElementById("buttonAplicar");
+applyButton.addEventListener('click', () => {
+  let userInput = document.getElementById("userInput").value;
+  console.log(userInput);
+  let parent = document.getElementById("gridContainer");
+  let childs = parent.querySelectorAll("*")
+  childs.forEach(n=>n.remove());
+  makeRows(userInput, userInput);
+});

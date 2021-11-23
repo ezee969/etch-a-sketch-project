@@ -2,7 +2,8 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 950px;
+    height: 850px;
+    background-color: #f2f2f2;
 }
 
 #container{
@@ -11,6 +12,9 @@ body{
   align-items: center;
   flex-direction: column;
   gap: 35px;
+  height: auto;
+  width: auto;
+  
 }
 
 #col1{
@@ -31,7 +35,7 @@ button{
   background-color: white;
   color: black;
   padding: 14px 20px;
-  font-size: 30px;
+  font-size: 25px;
   font-weight: bolder;
   border: 5px solid black;
   cursor: pointer;
@@ -51,11 +55,12 @@ button:active{
 input{
   border: none;
   border-bottom: 5px solid black;
-  font-size: 30px;
+  font-size: 25px;
   font-weight: bolder;
   width: 410px;
   height: 50px;
   text-align: center;
+  background-color: #f2f2f2;
 }
 
 :root {
@@ -68,10 +73,12 @@ input{
   grid-template-rows: repeat(var(--grid-rows), 1fr);
   grid-template-columns: repeat(var(--grid-cols), 1fr);
   border: 5px solid black;
+  height: 550px;
+  width: 550px;
 }
 
 .grid-item {
-  padding: 1em;
+  
   border: 1px solid rgb(0, 0, 0);
   transition: 0.15s;
 }
